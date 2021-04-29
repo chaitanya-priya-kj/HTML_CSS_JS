@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>28th April</title>
+	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+</head>
+<body>
+
+<svg width="100" height="100">
+  <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+</svg>
+
+<pre>
+	 x	The x-coordinate of the center of the circle	
+	 y	The y-coordinate of the center of the circle
+	 r	The radius of the circle	
+	sAngle	The starting angle, in radians (0 is at the 3 o'clock position of the arc's circle)	
+	eAngle	The ending angle, in radians	
+    counterclockwise	Optional. Specifies whether the drawing should be counterclockwise or clockwise. False is default, and indicates clockwise, while true indicates counter-clockwise.</pre>
+	<canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+	
+	
+	<script>
+		var c = document.getElementById("myCanvas");
+		var ctx = c.getContext("2d");
+		ctx.beginPath();
+		ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+		ctx.stroke();
+</script>
+</body>
+</html> 
