@@ -1,0 +1,54 @@
+<!DOCTYPE html> 
+<html lang = "en">
+<head>
+	<title>HTML Practice 29th</title>
+	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+<p> The video is from 
+
+<button onclick = "PlayPause()">Play/Pause</button>
+<button onclick = "small()">Change width to a smaller size </button> 
+
+<div>
+	<video id = "video1"width = "300" height = "200">
+		<source src = "movie.mp4" type = "video/mp4"
+		The browser does not support the video tag
+	</video> 
+</div>
+	
+	<div>
+	<video id = "video2"width = "300" height = "200" controls>
+		<source src = "movie.mp4" type = "video/mp4"
+		The browser does not support the video tag
+	</video> 
+	</div>
+	
+	<div>
+	<video id = "video3" width = "200" height = "200" autoplay muted>
+		<source src = "movie.mp4" type = "video/mp4"
+		The browser does not support the video tag
+	</video>
+</div>	
+
+<script>
+	var vd = document.getElementById("video1");
+	function PlayPause(){
+	if(vd.paused)
+		vd.play(); 
+	else
+		vd.pause(); 
+	}
+	
+	function small(){
+	vd.width = 150;}
+	
+</script>
+
+</body>
+</html> 

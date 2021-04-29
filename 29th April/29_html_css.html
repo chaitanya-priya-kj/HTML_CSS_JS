@@ -1,0 +1,105 @@
+<!DOCTYPE html> 
+<html lang = "en">
+<head>
+	<title>HTML Practice 29th</title>
+	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+	
+
+		div{
+		width: 100px; 
+		height : 100px; 
+		background: lightblue; 
+		transition: width 3s, height 5s;
+		position: relative; 		
+		}
+				.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+		#d1{
+		transition-timing-function : linear; }
+		
+		#d2{
+		transition-timing-function : ease-in; }
+		
+		#d3{
+		transition-timing-function : ease; }
+	
+	#d4{
+		transition-timing-function : ease-out; }
+	
+	div:hover{
+	width:300px; 
+	height: 300px; }
+	
+	#d5{
+	animation-name: example; 
+	width:100px;
+	height: 100px;
+	background-color: blue; 
+	animation-duration: 4s; 
+	animation-iteration-count: infinite; 
+	}
+	
+	@keyframes example{
+	from {background-color: blue;}
+	to{background-color:red;}}
+	
+	
+
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+	
+
+
+	
+	</style> 
+
+</head>
+
+<body>
+	<div id = "d1">
+		<p>Chaitanya</p>  
+	</div>
+	
+		<div id = "d2">
+		<p> Chaitanya </p> 
+	</div>
+	
+		<div id = "d3">
+		<p> Chaitanya </p> 
+	</div>
+	
+		<div id = "d4">
+		<p> Chaitanya </p> 
+	</div>
+<br>
+	<div id = "d5"></div>
+	
+	<br>
+	
+	<div class = "tooltip">Hover over me <span class = "tooltiptext"> Tooltip Text </span> </div> 
+</body>
+</html> 
