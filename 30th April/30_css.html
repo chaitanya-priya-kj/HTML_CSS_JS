@@ -1,0 +1,66 @@
+<!DOCTYPE html> 
+<html lang = "en">
+<head>
+	<title>CSS Practice 30th</title>
+	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<style>
+	
+	#img1 img{
+		width : 300px;
+		height : 200px;
+		border-radius: 8px; 
+		-webkit-box-reflect: right;	
+		object-fit: cover; }
+		
+		#img2 img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+		
+		div.polaroid {
+  width: 50%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+div.container {
+  text-align: center;
+  padding: 10px 20px;
+}
+		.polaroid img{
+		width: 100%; 
+		}
+		
+		
+		img{
+		width:300px;
+		height:200px; 
+		border-radius:50%; 
+			}
+		
+	</style> 
+</head>
+
+<body>
+<img src = "dog.jpg" alt = "A dog">
+
+<div id = "img1"><img src = "dog.jpg" alt = "A dog"></div>
+
+<div id = "img2"><img src = "dog.jpg" alt = "A dog"></div>
+
+<div class="polaroid">
+  <img src="dog.jpg" alt="A dog">
+  <div class="container">
+  <p>A dog</p>
+  </div>
+</div>
+
+
+</body>
+</html>

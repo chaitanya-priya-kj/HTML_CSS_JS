@@ -1,0 +1,46 @@
+<!DOCTYPE html> 
+<html lang = "en">
+<head>
+	<title>JS Practice 30th</title>
+	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+</head>
+<body>
+	
+<h2>JavaScript Class Method</h2>
+
+<p id="demo"></p>
+
+<p id = "demo1"></p>
+
+<script>
+class Person {
+  constructor(name, year) {
+    this.name = name;
+    this.year = year;
+
+  }
+  age() {
+    let date = new Date();
+    return date.getFullYear() - this.year;
+  }}
+  
+
+let myPerson = new Person("Chaitanya", 1999);
+document.getElementById("demo").innerHTML = "My name is " + myPerson.name + " and I am " + myPerson.age() +" years old.";
+
+var text = '{"student":[' +
+'{"firstName":"John","lastName":"Doe" },' +
+'{"firstName":"Anna","lastName":"Smith" },' +
+'{"firstName":"Peter","lastName":"Jones" }]}';
+
+obj = JSON.parse(text);
+document.getElementById("demo1").innerHTML =
+obj.student[1].firstName + " " + obj.student[1].lastName;
+
+</script>
+
+</body>
+</html> 
